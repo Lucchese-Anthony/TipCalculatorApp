@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SummaryActivity">
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="219dp" />
+
+        <ImageButton
+            android:id="@+id/roundUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:scaleX=".75"
+            app:srcCompat="@android:drawable/arrow_up_float"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/totalBillText"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:text="$0"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/roundDownButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:scaleX=".75"
+            app:srcCompat="@android:drawable/arrow_down_float"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="374dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

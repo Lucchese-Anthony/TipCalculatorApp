@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="bill_total">Bill Total</string>
+    <string name="people_on_the_bill">People on the bill</string>
+    <string name="tip_percent">Tip Percent</string>
+    <string name="reset">Reset</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_bill">Total Bill:</string>
+    <string name="_0">0</string>
+    <string name="bill_per_person">Bill Per Person:</string>
+    <string name="tip">Tip</string>
+    <string name="of_people"># of People</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="_15">15%</string>
+    <string name="_18">18%</string>
+    <string name="_20">20%</string>
+</resources>

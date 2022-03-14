@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/BillAmount"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bill_amount"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/BillAmountDecimal"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TipText"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tip"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/TipAmountDecimal"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/SpacerLayout"
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/add15Button"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX=".9"
+            android:scaleY=".9"
+            android:text="@string/_15"
+            android:onClick="setFifteenPercent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/add18Button"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX=".9"
+            android:scaleY=".9"
+            android:text="@string/_18"
+            android:onClick="setEighteenPercent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/add20Button"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleX=".9"
+            android:scaleY=".9"
+            android:text="@string/_20"
+            android:onClick="setTwentyPercent"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/PeopleText"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/of_people"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/NumOfPeopleDecimal"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ResetButton"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetLeft="10dp"
+            android:insetTop="10dp"
+            android:insetRight="10dp"
+            android:insetBottom="10dp"
+            android:text="@string/reset"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="resetFields"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/CalculateButton"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetLeft="10dp"
+            android:insetTop="10dp"
+            android:insetRight="10dp"
+            android:insetBottom="10dp"
+            android:text="@string/calculate"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="checkToStartSummaryActivity"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+</LinearLayout>
